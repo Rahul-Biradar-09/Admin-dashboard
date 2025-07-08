@@ -124,7 +124,7 @@ admin-dashboard/
 
 ------------DEPLOYMENT LINK------------
 
-
+Access project here https://admin-dashboard-lake-alpha-89.vercel.app/
 
 
 
