@@ -1,0 +1,198 @@
+/* src/styles/Table.css */
+
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.data-table {
+  width: 100%;
+  min-width: 700px;
+  border-collapse: collapse;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* 🛠️ FIX: Add this to make headers visible */
+.data-table thead {
+  background-color: #007bff;
+}
+
+.data-table thead th {
+  color: white;
+  font-weight: 600;
+  background-color: #007bff;
+}
+
+.data-table th,
+.data-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.data-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.data-table tbody tr:hover {
+  background-color: #e8f0fe;
+  transition: background 0.3s ease;
+}
+
+.actions-header,
+.actions-cell {
+  text-align: center;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 6px 12px;
+  margin-right: 6px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.edit-btn {
+  background-color: #28a745;
+}
+
+.edit-btn:hover {
+  background-color: #218838;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+.no-data {
+  text-align: center;
+  padding: 1.5rem;
+  color: #888;
+  font-style: italic;
+}
+
+/* Extra Small (<576px) */
+@media (max-width: 575.98px) {
+  .table-wrapper {
+    margin-top: 0.5rem;
+    border-radius: 6px;
+    padding: 0.2rem;
+  }
+  .data-table {
+    min-width: 400px;
+    font-size: 0.85rem;
+  }
+  .data-table th,
+  .data-table td {
+    padding: 0.5rem;
+  }
+  .edit-btn,
+  .delete-btn {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+    margin-right: 4px;
+  }
+}
+
+/* Small (≥576px and <768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .table-wrapper {
+    margin-top: 0.7rem;
+    border-radius: 8px;
+    padding: 0.3rem;
+  }
+  .data-table {
+    min-width: 500px;
+    font-size: 0.95rem;
+  }
+  .data-table th,
+  .data-table td {
+    padding: 0.7rem;
+  }
+  .edit-btn,
+  .delete-btn {
+    font-size: 0.85rem;
+    padding: 5px 10px;
+    margin-right: 5px;
+  }
+}
+
+/* Medium (≥768px and <992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .table-wrapper {
+    margin-top: 1rem;
+    border-radius: 10px;
+    padding: 0.5rem;
+  }
+  .data-table {
+    min-width: 650px;
+    font-size: 1rem;
+  }
+  .data-table th,
+  .data-table td {
+    padding: 0.9rem;
+  }
+  .edit-btn,
+  .delete-btn {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+    margin-right: 6px;
+  }
+}
+
+/* Large (≥992px and <1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .table-wrapper {
+    margin-top: 1.2rem;
+    border-radius: 10px;
+    padding: 0.7rem;
+  }
+  .data-table {
+    min-width: 700px;
+    font-size: 1.05rem;
+  }
+  .data-table th,
+  .data-table td {
+    padding: 1rem;
+  }
+  .edit-btn,
+  .delete-btn {
+    font-size: 0.95rem;
+    padding: 7px 14px;
+    margin-right: 7px;
+  }
+}
+
+/* Extra Large (≥1200px) */
+@media (min-width: 1200px) {
+  .table-wrapper {
+    margin-top: 1.5rem;
+    border-radius: 12px;
+    padding: 1rem;
+  }
+  .data-table {
+    min-width: 800px;
+    font-size: 1.1rem;
+  }
+  .data-table th,
+  .data-table td {
+    padding: 1.2rem;
+  }
+  .edit-btn,
+  .delete-btn {
+    font-size: 1rem;
+    padding: 8px 16px;
+    margin-right: 8px;
+  }
+}

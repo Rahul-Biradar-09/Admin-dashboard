@@ -1,0 +1,132 @@
+.form-container {
+  max-width: 500px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: white;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.error-text {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 0.75rem;
+  background: #28a745;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Extra Small (<576px) */
+@media (max-width: 575.98px) {
+  .form-container {
+    max-width: 98vw;
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+  .form-group input,
+  button[type="submit"] {
+    padding: 0.6rem;
+    font-size: 0.95rem;
+  }
+  .form-container h2 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Small (≥576px and <768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .form-container {
+    max-width: 95vw;
+    padding: 1.2rem 1.5rem;
+    margin: 1.5rem auto;
+  }
+  .form-group input,
+  button[type="submit"] {
+    padding: 0.7rem;
+    font-size: 1rem;
+  }
+  .form-container h2 {
+    font-size: 1.3rem;
+  }
+}
+
+/* Medium (≥768px and <992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .form-container {
+    max-width: 450px;
+    padding: 1.5rem 2rem;
+    margin: 2rem auto;
+  }
+  .form-group input,
+  button[type="submit"] {
+    padding: 0.75rem;
+    font-size: 1.05rem;
+  }
+  .form-container h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Large (≥992px and <1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .form-container {
+    max-width: 500px;
+    padding: 2rem 2.5rem;
+    margin: 2.5rem auto;
+  }
+  .form-group input,
+  button[type="submit"] {
+    padding: 0.8rem;
+    font-size: 1.08rem;
+  }
+  .form-container h2 {
+    font-size: 1.7rem;
+  }
+}
+
+/* Extra Large (≥1200px) */
+@media (min-width: 1200px) {
+  .form-container {
+    max-width: 520px;
+    padding: 2.5rem 3rem;
+    margin: 3rem auto;
+  }
+  .form-group input,
+  button[type="submit"] {
+    padding: 0.9rem;
+    font-size: 1.1rem;
+  }
+  .form-container h2 {
+    font-size: 1.9rem;
+  }
+}
